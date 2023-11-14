@@ -14,7 +14,7 @@ Projeto de JavaScript
 
 <h2>✔ Projeto Desenvolvido por</h2>
 <ul>
-  <li>Fernanda Santos</li>
+  <li>Fernanda de S. B. Santos</li>
   <li>Gabriel Tasso</li>
   <li>Luan Calasans</li>
 </ul>
