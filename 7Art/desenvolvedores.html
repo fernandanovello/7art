@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenvolvedores 7th Art</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to 7ª Art</title>
 
-    <script src="" feder></script>
+  <style>
 
-<style>
-.logo {
+    .logo {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -16,13 +15,19 @@
       max-width: 100px;
     }
 
+
+    .taylor {
+      width: 25%;
+    }
+    
+    .sym {
+      width: 25%;
+    }
+
     body {
       font-family: sans-serif;
       background-color: #000000;
-      color: #daa520;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      color: #ffffff;
     }
     header {
       background-color: #000000;
@@ -36,8 +41,6 @@
     }
     img {
       width: 100%;
-      max-height: calc(100vh - 200px);
-      object-fit: cover;
     }
     
     nav {
@@ -62,7 +65,6 @@
     
     main {
       padding: 20px;
-      flex: 1 0 auto;
     }
     
     section {
@@ -83,97 +85,17 @@
       color: #000000;
       padding: 20px;
       text-align: center;
-      flex-shrink: 0;
     }
     nav {
       background-color: #daa520;
     }
 
- /*---DESENVOLVEDOR--*/ 
-  .desenvolvedor p{
-    color: #f0eaea;
-  }
+  </style>
 
-  .desenvolvedor h1 {
-    color: #f0eaea;
-  }
-  
-  .desenvolvedor h2{
-    text-align: center;
-    color: #daa520;
-  }
-
-  .desenvolvedor h3{
-    
-    color: #daa520;
-  }
-
-
-  .desenvolvedor li {
-    display: inline-block;
-    float: left;
-    margin: 40px;
-  }
-
-  .desenvolvedor {
-    text-align: center;
-  }
-
-/*---FILMES---*/
-  .filmes button{
-    color: rgb(14, 19, 19);
-    font-size: 14px;
-    padding: 14px 18px;
-    border-radius: 12px;
-    background-color: rgb(0, 0, 0);
-    color: #daa520;
-    border: 2px solid #daa520;
-    transition-duration: 0.4s;
-    margin:12px
-  }
-
-  .filmes h2{
-    text-align: center;
-    color: #daa520;
-  }
-
-  .filmes h3{
-    
-    color: #f0eaea;
-  }  
-  .filmes button:hover {
-    background-color: #b6c0b9; /* Green */
-    color: rgb(0, 0, 0);
-  }
-
-  .filmes input{
-    color: rgb(14, 19, 19);
-    font-size: 14px;
-    padding: 14px 18px;
-    border-radius: 12px;
-    background-color: rgb(0, 0, 0);
-    color: #daa520;
-    border: 2px solid #daa520;
-    transition-duration: 0.4s;
-    margin:12px
-  }
-
-  .filmes input:hover{
-    background-color: #b6c0b9; /* Green */
-    color: rgb(0, 0, 0);
-  }
-
-  .filmes li {
-    display: inline-block;
-    float: left;
-    margin: 40px;
-  }
-  .filmes {
-    text-align: center;
-  }
-</style>
 </head>
+
 <body>
+
   <header>
     <div class="logo">
       <a href="index.html"><img src="imgs/logowhite.png" alt="Logotipo do site"></a>
@@ -181,50 +103,54 @@
 
   </header>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#">Filmes</a>
-      <a href="series.html">Séries</a>
-      <a href="#">Documentários</a>
-      <a href="desenvolvedores.html">Desenvolvedores</a>
-    </nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="filmes.html">Filmes</a>
+    <a href="series.html">Séries</a>
+    <a href="documentarios.html">Documentários</a>
+    <a href="desenvolvedores.html">Desenvolvedores</a>
+  </nav>
 
-    <main>
-    <section class="desenvolvedor">
-      <h2>Desenvolvedores</h2>
-      <ul id="desenvolvedor">
-        <ul>
+  <main>
+    <section class="series">
+      <h1>DOCUMENTÁRIOS</h1>
+
+      <ul>
         <li>
-          <img src="imgs/Gabriel.jpg" alt="Gabriel desenvolvedor">
-          <h3>Gabriel Henrique Tasso Martins</h3>
-          <div hidden> 
-          <h1>22 Anos</h1>
-          <p>Responsável pela parte de Filmes e Desenvolvedores.</p>
-          </div>
-        </li>
-<li>
-<img src="imgs/Fernanda.jpg" alt="Fernanda desenvolvedora">
-<h3>Fernanda de S. B. Santos</h3>
-<div hidden> 
-<h1>26 Anos</h1>
-<p>Responsável pela parte de Séries e Menu Principal.</p>
-</div>
-</li>
-<li>
-  <img src="imgs/Luan.jpg" alt="Luan desenvolvedor">
-    <h3>Luan Calasans</h3>          
+            <h2>Taylor Swift: The Eras Tour</h2>
+            <div class="taylor">
+                <a href="documentarios.html"><img src="imgs/taylor.png" alt="Foto/Banner promocional do Documentário/Musical Taylor Swift: The Eras Tour"></a>
+              </div>
+            </li>
 
-  <div hidden>
-    <h1>20 Anos</h1>
-    <p>Responsável pela parte de Documentários.</p>
-  </div>
-  
-</li>
+            <p>A cantora e ícone pop Taylor Swift faz um show 
+                <br>que mostra por que ela é um fenômeno cultural. 
+                <br>No espetáculo, a artista apresenta canções de 
+                <br>todas as fases de sua carreira.</p>
+<p><a href="https://www.youtube.com/watch?v=KudedLV0tP0" target="_blank">ACESSE O TRAILER OFICIAL AGORA MESMO!</a></p>
 
-</ul>
-</ul>
-</section>
-</main>
-<footer>
-<p style="text-align: center;">7ª Art Copyright © 2023</p>
-</footer>
+        <li>
+       
+            <h3>American Symphony</h3>
+
+            <div class="sym">
+                <a href="documentarios.html"><img src="imgs/sym.jpg" alt="Foto/Banner promocional do Documentário American Symphony"></a>
+              </div>
+
+<p>American Symphony é um documentário biográfico 
+    <br>americano de 2023, escrito, filmado e editado por 
+    <br>Matthew Heineman. Explora um ano na vida do músico Jon Batiste.<p>
+    <a href="https://www.youtube.com/watch?v=wKSMsdq8ONs" target="_blank">ACESSE O TRAILER OFICIAL AGORA MESMO!</a></p>
+
+      </ul>
+
+    
+    </section>
+  </main>
+
+  <footer>
+    <p>7ª Art Copyright © 2023</p>
+  </footer>
+
+</body>
+</html>
