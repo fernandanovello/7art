@@ -6,7 +6,6 @@
   <title>Welcome to 7ª Art</title>
 
   <style>
-
     .logo {
       display: flex;
       justify-content: center;
@@ -14,16 +13,16 @@
       max-height: 100px;
       max-width: 100px;
     }
-
-
-    .Elvis {
+    
+    .aranhaverso {
       width: 25%;
     }
     
-    .coda {
+    .percy {
       width: 25%;
     }
-
+    
+    
     body {
       font-family: sans-serif;
       background-color: #000000;
@@ -89,6 +88,54 @@
     nav {
       background-color: #daa520;
     }
+    
+    /* Flip card */
+
+    .flip-card-container {
+    max-width: 300px; /* Define a largura máxima do container */
+    height: 400px; /* Defina uma altura fixa */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Adicione esta linha */
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    perspective: 1000px;
+    position: relative;
+  }
+
+  .flip-card-inner {
+    position: relative; /* Altere para 'relative' */
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute; /* Adicione esta linha */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
   </style>
 
@@ -108,45 +155,52 @@
     <a href="filmes.html">Filmes</a>
     <a href="series.html">Séries</a>
     <a href="documentarios.html">Documentários</a>
-    <a href="desenvolvedores.html">Desenvolvedores</a>
+    <a href="desenvolvedor.html">Desenvolvedores</a>
   </nav>
 
   <main>
-    <section class="series">
-      <h1>FILMES</h1>
-
+    <section class="home">
+      <h1>Últimos Lançamentos</h1>
       <ul>
         <li>
-            <h2>Elvis</h2>
-            <div class="Elvis">
-                <a href="filmes.html"><img src="imgs/Elvis.jpg" alt="Foto/Banner promocional do Filme do rei do rock, Elvis"></a>
+
+          <h2>Homem-Aranha: Através do Aranhaverso</h2>
+
+          <div class="flip-card-container">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="imgs/aranhaverso.png" alt="Imagem da frente">
+                </div>
+                <div class="flip-card-back">
+                  <img src="imgs/spidermannowayhome.png" alt="Imagem do verso">
+                </div>
               </div>
-            </li>
-
-            <p>Nesta minuciosa cinebiografia, a história de Elvis 
-                <br>é vista sob o prisma de sua complicada relação <br>
-                com o enigmático empresário, o Coronel Tom Parker.</p>
-<p><a href="https://www.youtube.com/watch?v=XpU9J2oL0GE" target="_blank">ACESSE O TRAILER OFICIAL DUBLADO AGORA MESMO!</a></p>
-
-
+            </div>
+          </div>
+        </li>
+        <p>Um adolescente de Brooklyn, Miles Morales, descobre que <br> ele é um de muitos Homens-Aranha em um multiverso conhecido <br> como "Aranhaverso", e deve se unir a outros heróis aracnídeos para salvar <br> sua realidade da destruição.</p>
+        <p><a href="https://www.youtube.com/watch?v=LZBlXkDvhh4" target="_blank">ACESSE O TRAILER OFICIAL DUBLADO AGORA MESMO!</a></p>
         <li>
-       
-            <h3>Coda - No Ritmo do Coração</h3>
+          <h3>Percy Jackson e os Olimpianos</h3>
+          <!-- <div class="percy"> <img src="percy.png" alt="Série"></div> -->
 
-            <div class="coda">
-                <a href="filmes.html"><img src="imgs/coda.jpg" alt="Foto/Banner promocional do Filme Coda - No Ritmo do Coração"></a>
+          <div class="flip-card-container">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="imgs/percy.png" alt="Imagem da frente">
+                </div>
+                <div class="flip-card-back">
+                  <img src="imgs/lancereddick.png" alt="Imagem do verso">
+                </div>
               </div>
+            </div>
+          </div>
 
-<p>Neste drama vencedor de três Oscars®, incluindo 
-    <br>Melhor Filme, Ruby (Emilia Jones) é a única 
-    <br>pessoa que pode ouvir em uma família de surdos <br>
-    cujos negócios vão mal, e que terá que decidir entre 
-    <br>o sonho de estudar música e cuidar dos pais.<p>
-    <a href="https://www.youtube.com/watch?v=USGw538dzuU" target="_blank">ACESSE O TRAILER OFICIAL DUBLADO AGORA MESMO!</a></p>
-
+          <p>Percy Jackson é um adolescente aparentemente normal <br> que descobre ser um semideus, filho de Poseidon. Ele é enviado <br> para o Acampamento Meio-Sangue, um refúgio para semideuses, <br> onde deve aprender a aprimorar suas habilidades e enfrentar uma <br> série de missões para prevenir o caos no Olimpo.</p>
+          <p><a href="https://www.youtube.com/watch?v=uvk45iybIl4" target="_blank">ACESSE O TRAILER OFICIAL DUBLADO AGORA MESMO!</a></p>
       </ul>
-
-    
     </section>
   </main>
 
